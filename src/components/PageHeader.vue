@@ -35,24 +35,25 @@ export default {
       <!-- hero -->
       <div class="hero">
         <!-- row con icone alla fine -->
-        <div class="row">
-          <div class="col ">
-            <!-- icon nella parte dx -->
-            <div class="icon">
-              <i class="fa-solid fa-folder"></i>
-              <h4>Demos</h4>
+        <div class="row justify-content-end ">
 
-            </div>
-            <div class="icon">
-              <h3><sup>$</sup>39</h3>
-              <h4>On Sale</h4>
-            </div>
+          <!-- icon nella parte dx -->
+          <div class="icon">
+            <i class="fa-solid fa-folder"></i>
+            <h4>Demos</h4>
+
           </div>
+        </div>
+
+        <div class="row justify-content-end ">
+          <div class="icon">
+            <h3><sup>$</sup>39</h3>
+            <h4>On Sale</h4>
+          </div>
+
         </div>
         <!-- immagine,testo e pulsante -->
         <div class="row row-cols-1">
-
-
           <div class="col">
             <img src="../../public/images/avada-nightclub-homepage-image-800x398.png" alt="">
             <h2> making memories all night long </h2>
@@ -83,6 +84,7 @@ header {
   background-size: cover;
   height: 800px;
 
+
 }
 
 nav {
@@ -92,7 +94,7 @@ nav {
   }
 
   a {
-
+    color: white;
     font-weight: bold;
     padding-right: 40px;
     text-decoration: none;
@@ -104,6 +106,7 @@ nav {
 
   img {
     border-bottom: 3px solid $primary-color;
+    margin-bottom: 20px;
   }
 
   button {
@@ -113,6 +116,7 @@ nav {
     border-style: none;
     padding: 10px;
     font-weight: bold;
+    margin: 20px 0;
   }
 
   .icon {
@@ -139,5 +143,7 @@ nav {
       font-size: small;
     }
   }
+
+
 }
 </style>
