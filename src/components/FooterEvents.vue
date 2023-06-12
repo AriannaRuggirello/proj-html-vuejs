@@ -20,7 +20,7 @@ export default {
         </div>
         <div class="col text-start">
             <!-- titolo piu span -->
-            <h3>{{ details.text }}</h3>
+            <h3>{{ details.text }} </h3>
             <span>{{ details.date }}</span>
         </div>
     </div>
@@ -29,4 +29,12 @@ export default {
 <style lang="scss">
 @use '../style/partials/variables.scss' as *;
 @use '../style/partials/mixin.scss' as *;
+
+h2 {
+    color: $primary-color;
+}
+
+span {
+    color: gray;
+}
 </style>

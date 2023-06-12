@@ -89,13 +89,8 @@ export default {
 
                         <div class="col">
                             <ul>
-
                                 <FooterLinks v-for="link in footerLink" :details="link"
                                     :class="link.state ? 'active' : ''" />
-
-
-
-
                             </ul>
                         </div>
 
@@ -118,6 +113,15 @@ export default {
 
                     <img src="../../public/images/avada-nightclub-footer-dancelounge-400x171.jpg" alt="">
                 </div>
+                <!-- copyright -->
+                <div class="row">
+                    <div class="col copy">
+                        <p>
+                            Avada Theme by <a href="#">ThemeFusion</a> | All Right Reserved | Powered by
+                            <a href="#">Wordpress</a> Wordpress
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -131,8 +135,6 @@ footer {
     background-image: url(../../public/images/avada-nightclub-footer-background-final-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
-    color: white;
     padding: 80px 0;
 
 
@@ -140,25 +142,23 @@ footer {
         padding-bottom: 30px;
     }
 
-    h3 {
-        color: $primary-color;
-    }
-
-    span {
-        color: #68665a;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    i {
-
-        padding-right: 30px;
-    }
-
     .active {
         color: $primary-color;
     }
+
+    .copy {
+        padding-top: 150px;
+
+    }
+
+    h4,
+    p {
+        color: white;
+    }
+
+    a {
+        color: $primary-color;
+    }
+
 }
 </style>
