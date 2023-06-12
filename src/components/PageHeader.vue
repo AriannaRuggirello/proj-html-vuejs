@@ -34,6 +34,37 @@ export default {
       </div>
       <!-- hero -->
       <div class="hero">
+        <!-- row con icone alla fine -->
+        <div class="row">
+          <div class="col ">
+            <!-- icon nella parte dx -->
+            <div class="icon">
+              <i class="fa-solid fa-folder"></i>
+              <h4>Demos</h4>
+
+            </div>
+            <div class="icon">
+              <h3><sup>$</sup>39</h3>
+              <h4>On Sale</h4>
+            </div>
+          </div>
+        </div>
+        <!-- immagine,testo e pulsante -->
+        <div class="row row-cols-1">
+
+
+          <div class="col">
+            <img src="../../public/images/avada-nightclub-homepage-image-800x398.png" alt="">
+            <h2> making memories all night long </h2>
+            <button>BECOME A VIP</button>
+            <!-- play showreel img -->
+            <div class="col">
+              <img src="../../public/images/avada-nightclub-play-showreel-200x47.png" alt="">
+
+            </div>
+          </div>
+        </div>
+
 
       </div>
     </div>
@@ -47,20 +78,66 @@ export default {
 @use '../style/partials/mixin.scss' as *;
 
 header {
+  color: white;
   background-image: url(../../public/images/avada-nightclub-home-hero.jpg);
   background-size: cover;
-  height: 750px;
-}
-
-img {
-  width: 200px;
+  height: 800px;
 
 }
 
-a {
-  color: white;
-  font-weight: bold;
-  padding-right: 40px;
-  text-decoration: none;
+nav {
+  img {
+    width: 200px;
+
+  }
+
+  a {
+
+    font-weight: bold;
+    padding-right: 40px;
+    text-decoration: none;
+  }
+}
+
+.hero {
+
+
+  img {
+    border-bottom: 3px solid $primary-color;
+  }
+
+  button {
+
+    background-color: $secondary-color;
+    color: white;
+    border-style: none;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  .icon {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    color: grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+
+    .fa-folder {
+      font-size: 30px;
+    }
+
+    h3 {
+      color: #65bc7b;
+      font-size: 30px;
+    }
+
+    h4 {
+      font-weight: bold;
+      font-size: small;
+    }
+  }
 }
 </style>
