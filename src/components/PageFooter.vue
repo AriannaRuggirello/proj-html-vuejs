@@ -1,40 +1,68 @@
 <script >
 
 import FooterEvents from '../components/FooterEvents.vue'
+import FooterLinks from '../components/FooterLinks.vue'
+
 
 export default {
     name: 'PageFooter',
     components: {
         FooterEvents,
+        FooterLinks,
     },
-    events: [
-        {
-            img: '../../public/images/avada-nightclub-events-6-66x66.jpg',
-            text: 'DJ Fusion',
-            date: 'August 19,2022 @ 8.00 am',
+    data() {
+        return {
+            events: [
+                {
+                    img: '../../public/images/avada-nightclub-events-6-66x66.jpg',
+                    text: 'DJ Fusion',
+                    date: 'August 19,2022 @ 8.00 am',
 
 
-        },
-        {
-            img: '../../public/images/avada-nightclub-events-5-66x66.jpg',
-            text: 'House Nation',
-            date: 'August 19,2022 @ 8.00 am',
+                },
+                {
+                    img: '../../public/images/avada-nightclub-events-5-66x66.jpg',
+                    text: 'House Nation',
+                    date: 'August 19,2022 @ 8.00 am',
 
 
-        }, {
-            img: '../../public/images/avada-nightclub-events-4-66x66.jpg',
-            text: 'Jazz Night',
-            date: 'August 19,2022 @ 8.00 am',
+                }, {
+                    img: '../../public/images/avada-nightclub-events-4-66x66.jpg',
+                    text: 'Jazz Night',
+                    date: 'August 19,2022 @ 8.00 am',
 
 
-        },
-    ]
+                },
+            ],
+            footerLink: [
+                {
+                    text: 'Avada Night Club',
+                    state: false,
+                    url: '#',
+                },
+                {
+                    text: '100 Night Club Blvd',
+                    state: false,
+                    url: '#',
+                },
+                {
+                    text: 'Beverly Hills',
+                    state: false,
+                    url: '#',
+                }, {
+                    text: 'hi@your-demain.com',
+                    state: true,
+                    url: '#',
+                }, {
+                    text: '+1 (500) 000 000',
+                    state: false,
+                    url: '#',
+                },
+            ]
+        }
+    }
+
 }
-
-
-
-
-
 </script>
 
 <template>
@@ -59,16 +87,18 @@ export default {
 
                         </div>
 
-                        <div class="col space">
+                        <div class="col">
                             <ul>
-                                <li>link</li>
-                                <li>link</li>
-                                <li>link</li>
-                                <li>link</li>
-                                <li>link</li>
+
+                                <FooterLinks v-for="link in footerLink" :details="link"
+                                    :class="link.state ? 'active' : ''" />
+
+
+
 
                             </ul>
                         </div>
+
 
                         <div class="col space align-self-center">
                             <i class="fa-brands fa-facebook-f"></i>
@@ -107,7 +137,7 @@ footer {
 
 
     .space {
-        padding-bottom: 40px;
+        padding-bottom: 30px;
     }
 
     h3 {
@@ -125,6 +155,10 @@ footer {
     i {
 
         padding-right: 30px;
+    }
+
+    .active {
+        color: $primary-color;
     }
 }
 </style>

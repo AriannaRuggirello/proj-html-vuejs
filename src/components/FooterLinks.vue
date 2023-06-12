@@ -1,8 +1,9 @@
+
 <script >
 
 export default {
 
-    name: 'LinkLeftHeader',
+    name: 'FooterLinks',
     props: {
         details: Object,
 
@@ -11,8 +12,9 @@ export default {
 </script>
 
 <template>
-    <!-- nav bar con logo in centro -->
-    <a>{{ details.text }}</a>
+    <li>
+        <a>{{ details.text }}</a>
+    </li>
 </template>
 
 <style lang="scss">
