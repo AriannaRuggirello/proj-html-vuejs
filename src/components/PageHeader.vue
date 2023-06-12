@@ -1,11 +1,19 @@
 <script >
 
+import LinkLeftHeader from '../components/LinkLeftHeader.vue';
+import LinkRightHeader from '../components/LinkRightHeader.vue';
+
+
 
 export default {
   name: 'PageHeader',
+  components: {
+    LinkLeftHeader,
+    LinkRightHeader,
+  },
   data() {
     return {
-      links: [
+      linksLeft: [
         {
           text: 'HOME',
           url: '#',
@@ -26,8 +34,8 @@ export default {
           active: false
 
         },
-
-
+      ],
+      linksRight: [
         {
           text: 'JOBS',
           url: '#',
@@ -49,29 +57,25 @@ export default {
 
         },
       ]
+
+
+
     }
   }
 }
-
-
-
-
-
 </script>
 
 <template>
   <header>
     <div class="container text-center ">
       <div class="row align-items-center">
-        <!-- nav bar con logo in centro -->
-        <nav>
-          <a v-for="link in links" :href="link.url" :class="link.active ? 'active' : ''">{{ link.text }}</a>
-
-          <a href="#">
-            <img src="../../public/images/avada-nightclub-logo.png" alt="">
-          </a>
-
-        </nav>
+        <LinkLeftHeader v-for="link in linksLeft" :href="link.url" :details="linksLeft"
+          :class="link.active ? 'active' : ''" />
+        <a href="#">
+          <img src="../../public/images/avada-nightclub-logo.png" alt="">
+        </a>
+        <LinkRightHeader v-for="link in linksRight" :href="link.url" :details="linksRight"
+          :class="link.active ? 'active' : ''" />
 
       </div>
       <!-- hero -->
@@ -128,6 +132,7 @@ header {
   nav {
     img {
       width: 200px;
+
 
     }
 
