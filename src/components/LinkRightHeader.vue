@@ -11,11 +11,8 @@ export default {
 
 <template>
     <!-- nav bar con logo in centro -->
-    <nav>
-        <a>{{ details.text }}</a>
 
-
-    </nav>
+    <a>{{ details.text }}</a>
 </template>
 
 <style lang="scss">

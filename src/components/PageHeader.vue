@@ -68,16 +68,18 @@ export default {
 <template>
   <header>
     <div class="container text-center ">
-      <div class="row align-items-center">
-        <LinkLeftHeader v-for="link in linksLeft" :href="link.url" :details="linksLeft"
-          :class="link.active ? 'active' : ''" />
+      <nav>
+
+        <LinkLeftHeader v-for="link in linksLeft" :href="link.url" :details="link" :class="link.active ? 'active' : ''" />
+
         <a href="#">
           <img src="../../public/images/avada-nightclub-logo.png" alt="">
         </a>
-        <LinkRightHeader v-for="link in linksRight" :href="link.url" :details="linksRight"
-          :class="link.active ? 'active' : ''" />
 
-      </div>
+
+        <LinkRightHeader v-for="link in linksRight" :href="link.url" :details="link"
+          :class="link.active ? 'active' : ''" />
+      </nav>
       <!-- hero -->
       <div class="hero">
         <!-- row con icone alla fine -->
