@@ -3,7 +3,54 @@
 
 export default {
   name: 'PageHeader',
+  data() {
+    return {
+      links: [
+        {
+          text: 'HOME',
+          url: '#',
+          active: true
 
+        },
+
+        {
+          text: 'THE CLUB',
+          url: '#',
+          active: false
+
+        },
+
+        {
+          text: 'EVENTS',
+          url: '#',
+          active: false
+
+        },
+
+
+        {
+          text: 'JOBS',
+          url: '#',
+          active: false
+
+        },
+
+        {
+          text: 'NEWS',
+          url: '#',
+          active: false
+
+        },
+
+        {
+          text: 'CONTACT US',
+          url: '#',
+          active: false
+
+        },
+      ]
+    }
+  }
 }
 
 
@@ -18,17 +65,12 @@ export default {
       <div class="row align-items-center">
         <!-- nav bar con logo in centro -->
         <nav>
-
-          <a href="#">HOME</a>
-          <a href="#">THE CLUB</a>
-          <a href="#">EVENTS</a>
+          <a v-for="link in links" :href="link.url" :class="link.active ? 'active' : ''">{{ link.text }}</a>
 
           <a href="#">
             <img src="../../public/images/avada-nightclub-logo.png" alt="">
           </a>
-          <a href="#">HOME</a>
-          <a href="#">THE CLUB</a>
-          <a href="#">EVENTS</a>
+
         </nav>
 
       </div>
@@ -65,8 +107,6 @@ export default {
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
 
@@ -82,68 +122,72 @@ header {
   color: white;
   background-image: url(../../public/images/avada-nightclub-home-hero.jpg);
   background-size: cover;
-  height: 800px;
 
 
-}
 
-nav {
-  img {
-    width: 200px;
+  nav {
+    img {
+      width: 200px;
 
-  }
-
-  a {
-    color: white;
-    font-weight: bold;
-    padding-right: 40px;
-    text-decoration: none;
-  }
-}
-
-.hero {
-
-
-  img {
-    border-bottom: 3px solid $primary-color;
-    margin-bottom: 20px;
-  }
-
-  button {
-
-    background-color: $secondary-color;
-    color: white;
-    border-style: none;
-    padding: 10px;
-    font-weight: bold;
-    margin: 20px 0;
-  }
-
-  .icon {
-    width: 70px;
-    height: 70px;
-    background-color: white;
-    color: grey;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-
-
-    .fa-folder {
-      font-size: 30px;
     }
 
-    h3 {
-      color: #65bc7b;
-      font-size: 30px;
-    }
-
-    h4 {
+    a {
+      color: white;
       font-weight: bold;
-      font-size: small;
+      padding-right: 40px;
+      text-decoration: none;
+    }
+
+    .active {
+      color: $secondary-color;
+      border-bottom: 2px solid $secondary-color;
     }
   }
 
+  .hero {
 
+
+    img {
+      border-bottom: 3px solid $primary-color;
+      margin-bottom: 20px;
+    }
+
+    button {
+
+      background-color: $secondary-color;
+      color: white;
+      border-style: none;
+      padding: 10px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .icon {
+      width: 70px;
+      height: 70px;
+      background-color: white;
+      color: grey;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+
+
+      .fa-folder {
+        font-size: 30px;
+      }
+
+      h3 {
+        color: #65bc7b;
+        font-size: 30px;
+      }
+
+      h4 {
+        font-weight: bold;
+        font-size: small;
+      }
+    }
+
+
+  }
 }
 </style>
