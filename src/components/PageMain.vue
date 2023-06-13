@@ -109,8 +109,10 @@ export default {
 @use '../style/partials/mixin.scss' as *;
 
 .theClub {
-
+    background-image: url(../../public/images/avada-nightclub-cloud-background.jpg);
+    background-size: cover;
     padding: 100px 0;
+    color: gray;
 
     h4 {
         color: $primary-color;
