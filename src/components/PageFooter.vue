@@ -81,7 +81,7 @@ export default {
 
                 <!-- colonna link -->
                 <div class="col">
-                    <div class="row row-cols-1">
+                    <div class="row row-cols-1 text-center">
                         <div class="col space">
                             <img src="../../public/images/avada-nightclub-logo-2x-200x66.png" alt="">
 
@@ -95,7 +95,7 @@ export default {
                         </div>
 
 
-                        <div class="col space align-self-center">
+                        <div class="col">
                             <i class="fa-brands fa-facebook-f"></i>
                             <i class="fa-brands fa-twitter"></i>
                             <i class="fa-brands fa-instagram"></i>
