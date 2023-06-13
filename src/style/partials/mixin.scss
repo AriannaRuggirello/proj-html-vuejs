@@ -1,0 +1,26 @@
+@use './variables.scss' as *;
+
+@mixin red-button {
+
+    background-color: $secondary-color;
+    color: white;
+    border-style: none;
+    padding: 10px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+@mixin blue-button {
+
+    background-color: $primary-color;
+    color: white;
+    border-style: none;
+    padding: 10px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+
+@mixin subtitle {
+    font-size: 60px;
+}

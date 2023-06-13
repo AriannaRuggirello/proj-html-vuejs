@@ -160,13 +160,7 @@ header {
     }
 
     button {
-
-      background-color: $secondary-color;
-      color: white;
-      border-style: none;
-      padding: 10px;
-      font-weight: bold;
-      margin: 20px 0;
+      @include red-button
     }
 
     .icon {

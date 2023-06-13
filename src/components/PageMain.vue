@@ -9,7 +9,7 @@ export default {
 
 <template>
     <main>
-        <section class="welcome">
+        <section class="theClub">
             <div class="container">
                 <!-- testo -->
                 <div class="row text-center justify-content-center">
@@ -76,7 +76,29 @@ export default {
             </div>
         </section>
 
+        <section class="dj-set">
 
+            <div class="row">
+                <div class="col-lg-6 info">
+                    <img src="../../public/images/avada-nightclub-resident-profile.jpg" alt="">
+                    <div class="info-button">
+                        <h4>titolo</h4>
+                        <h2>sottotitolo</h2>
+                        <button class="blu-button">view profile</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 info">
+                    <img src="../../public/images/avada-nightclub-lisahouse-inset-new.jpg" alt="">
+                    <div class="info-button">
+                        <h4>titolo</h4>
+                        <h2>sottotitolo</h2>
+                        <button class="red-button">view profile</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
 
 
     </main>
@@ -86,64 +108,97 @@ export default {
 @use '../style/partials/variables.scss' as *;
 @use '../style/partials/mixin.scss' as *;
 
-.welcome {
+.theClub {
 
     padding: 100px 0;
 
     h4 {
         color: $primary-color;
-        font-weight: bold;
+
     }
 
     h2 {
-        font-size: 60px;
+        @include subtitle;
+    }
+
+    .row>* {
+        padding-right: calc(var(--bs-gutter-x) * 0);
+        padding-left: calc(var(--bs-gutter-x) * 0);
+    }
+}
+
+.info {
+    position: relative;
+    color: white;
+
+
+    img {
+        width: 600px;
+        height: 338px;
+    }
+
+    .info-img {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 5%;
+        bottom: 10%;
+
+        span {
+            font-size: x-large;
+            padding-right: 5px;
+
+        }
+
+        hr {
+            width: 400px;
+            opacity: inherit;
+            color: $primary-color;
+
+        }
+
+        .red {
+            color: $secondary-color;
+        }
+
+        .gold {
+            color: gold;
+        }
     }
 
 
+}
 
-    .info {
-        position: relative;
-        color: white;
+.dj-set {
+    .row>* {
+        padding-right: calc(var(--bs-gutter-x) * 0);
+        padding-left: calc(var(--bs-gutter-x) * 0);
+    }
 
+    img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        padding: 0 -20px;
+    }
 
-        img {
-            width: 600px;
-            height: 338px;
+    .info-button {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+
+        .blu-button {
+            @include blue-button;
+
         }
 
-        .info-img {
-            display: flex;
-            align-items: center;
-            position: absolute;
-            right: 5%;
-            bottom: 10%;
+        .red-button {
+            @include red-button;
 
-            span {
-                font-size: x-large;
-                padding-right: 5px;
-
-            }
-
-            hr {
-                width: 400px;
-                opacity: inherit;
-                color: $primary-color;
-
-            }
-
-            .red {
-                color: $secondary-color;
-            }
-
-            .gold {
-                color: gold;
-            }
         }
 
 
     }
-
-
 
 }
 </style>
