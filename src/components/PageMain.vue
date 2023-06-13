@@ -82,16 +82,16 @@ export default {
                 <div class="col-lg-6 info">
                     <img src="../../public/images/avada-nightclub-resident-profile.jpg" alt="">
                     <div class="info-button">
-                        <h4>titolo</h4>
-                        <h2>sottotitolo</h2>
+                        <h4 class="blu-txt">RESIDENT DJ</h4>
+                        <h2>Dj Avada</h2>
                         <button class="blu-button">view profile</button>
                     </div>
                 </div>
                 <div class="col-lg-6 info">
                     <img src="../../public/images/avada-nightclub-lisahouse-inset-new.jpg" alt="">
                     <div class="info-button">
-                        <h4>titolo</h4>
-                        <h2>sottotitolo</h2>
+                        <h4 class="red-txt">SPECIAL GUEST DJ </h4>
+                        <h2>Dj Blondie</h2>
                         <button class="red-button">view profile</button>
                     </div>
                 </div>
@@ -197,6 +197,13 @@ export default {
 
         }
 
+        .blu-txt {
+            color: $primary-color;
+        }
+
+        .red-txt {
+            color: $secondary-color;
+        }
 
     }
 

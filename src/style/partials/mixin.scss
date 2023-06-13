@@ -1,7 +1,8 @@
 @use './variables.scss' as *;
 
 @mixin red-button {
-
+    width: 150px;
+    text-transform: uppercase;
     background-color: $secondary-color;
     color: white;
     border-style: none;
@@ -11,6 +12,8 @@
 }
 
 @mixin blue-button {
+    width: 150px;
+    text-transform: uppercase;
 
     background-color: $primary-color;
     color: white;
