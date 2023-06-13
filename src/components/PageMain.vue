@@ -9,7 +9,9 @@ export default {
 
 <template>
     <main>
+        <!-- club section -->
         <section class="theClub">
+
             <div class="container">
                 <!-- testo -->
                 <div class="row text-center justify-content-center">
@@ -25,7 +27,7 @@ export default {
                 </div>
                 <!-- immagini -->
                 <div class="row text-center ">
-
+                    <!-- img cards -->
                     <div class="col text-end info">
 
                         <img src="../../public/images/avada-nightclub-dancelounge-small.jpg" alt="">
@@ -65,17 +67,12 @@ export default {
                         </div>
 
                     </div>
-
-
-
-
-
-
-
                 </div>
             </div>
+
         </section>
 
+        <!-- dj set section -->
         <section class="dj-set">
 
             <div class="row">
@@ -100,8 +97,10 @@ export default {
 
         </section>
 
+        <!-- special events section -->
         <section class="special-events">
-            <div class="row text-center row-cols-1">
+
+            <div class="row  overlay text-center row-cols-1">
                 <div class="col">
                     <h4 class="red-txt">SPECIAL EVENTS</h4>
                     <h2>for your diary</h2>
@@ -154,9 +153,12 @@ export default {
 
                 </div>
             </div>
+
         </section>
 
+        <!-- vip section -->
         <section class="vip">
+
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-5">
                     <h4 class="blu-txt">SPECIAL GUEST DJ </h4>
@@ -184,6 +186,8 @@ export default {
     background-size: cover;
     padding: 100px 0;
     color: gray;
+
+
 
     h4 {
         color: $primary-color;
@@ -288,7 +292,13 @@ h2 {
     background-image: url(../../public/images/avada-nightclub-homepage-events-background-new.jpg);
     background-size: cover;
     color: white;
+    position: relative;
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 }
+
 
 .vip {
     background-image: url(../../public/images/avada-nightclub-vip-hero-new.jpg);
