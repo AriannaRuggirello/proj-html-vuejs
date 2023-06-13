@@ -133,6 +133,7 @@ export default {
 
 footer {
     background-image: url(../../public/images/avada-nightclub-footer-background-final-2.jpg);
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 80px 0;

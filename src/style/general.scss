@@ -1,0 +1,38 @@
+@use './partials/variables.scss' as *;
+@use './partials/mixin.scss' as *;
+
+button {
+    width: 150px;
+    text-transform: uppercase;
+    color: white;
+    border-style: none;
+    padding: 10px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+h2 {
+    color: white;
+    font-size: 60px;
+}
+
+.blue {
+    background-color: $primary-color;
+}
+
+.red {
+    background-color: $secondary-color;
+
+}
+
+.blu-txt {
+    color: $primary-color;
+}
+
+.red-txt {
+    color: $secondary-color;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}

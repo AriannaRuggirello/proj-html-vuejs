@@ -134,70 +134,69 @@ header {
   background-size: cover;
   position: relative;
 
-  .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-
-    nav {
 
 
-      img {
-        width: 200px;
+  nav {
 
 
-      }
+    img {
+      width: 200px;
 
-      a {
-        color: white;
-        font-weight: bold;
-        padding-right: 40px;
-        text-decoration: none;
-      }
 
-      .active {
-        color: $secondary-color;
-        border-bottom: 2px solid $secondary-color;
-      }
     }
 
-    .hero {
+    a {
+      color: white;
+      font-weight: bold;
+      padding-right: 40px;
+      text-decoration: none;
+    }
 
-      img {
-        border-bottom: 3px solid $primary-color;
-        margin-bottom: 20px;
-      }
-
-      button {
-        @include red-button
-      }
-
-      .icon {
-        width: 70px;
-        height: 70px;
-        background-color: white;
-        color: grey;
-        border-radius: 5px;
-        padding: 10px;
-        margin-bottom: 10px;
-
-
-        .fa-folder {
-          font-size: 30px;
-        }
-
-        h3 {
-          color: #65bc7b;
-          font-size: 30px;
-        }
-
-        h4 {
-          font-weight: bold;
-          font-size: small;
-        }
-      }
-
-
+    .active {
+      color: $secondary-color;
+      border-bottom: 2px solid $secondary-color;
     }
   }
 
+  .hero {
+    padding-bottom: 50px;
+
+    img {
+      border-bottom: 3px solid $primary-color;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: $secondary-color;
+      margin: 30px 0
+    }
+
+    .icon {
+      width: 70px;
+      height: 70px;
+      background-color: white;
+      color: grey;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+
+
+      .fa-folder {
+        font-size: 30px;
+      }
+
+      h3 {
+        color: #65bc7b;
+        font-size: 30px;
+      }
+
+      h4 {
+        font-weight: bold;
+        font-size: small;
+      }
+    }
+
+
+  }
 }
 </style>

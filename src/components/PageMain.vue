@@ -16,7 +16,7 @@ export default {
                 <!-- testo -->
                 <div class="row text-center justify-content-center">
                     <div class="col-lg-7">
-                        <h4>WELCOME TO AVADA</h4>
+                        <h4 class="red-txt">WELCOME TO AVADA</h4>
                         <h2>have the night of your life</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores cumque! Officia vero
                             quae explicabo fugiat earum, expedita quidem optio quasi voluptate veniam cupiditate nulla
@@ -79,17 +79,17 @@ export default {
                 <div class="col-lg-6 info">
                     <img src="../../public/images/avada-nightclub-resident-profile.jpg" alt="">
                     <div class="info-button">
-                        <h4 class="blu-txt">RESIDENT DJ</h4>
+                        <h4 class="red-txt">RESIDENT DJ</h4>
                         <h2>Dj Avada</h2>
-                        <button class="blu-button">view profile</button>
+                        <button class="blue">view profile</button>
                     </div>
                 </div>
                 <div class="col-lg-6 info">
                     <img src="../../public/images/avada-nightclub-lisahouse-inset-new.jpg" alt="">
                     <div class="info-button">
-                        <h4 class="red-txt">SPECIAL GUEST DJ </h4>
+                        <h4 class="blu-txt">SPECIAL GUEST DJ </h4>
                         <h2>Dj Blondie</h2>
-                        <button class="red-button">view profile</button>
+                        <button class="red">view profile</button>
                     </div>
                 </div>
             </div>
@@ -100,59 +100,63 @@ export default {
         <!-- special events section -->
         <section class="special-events">
 
-            <div class="row  overlay text-center row-cols-1">
-                <div class="col">
-                    <h4 class="red-txt">SPECIAL EVENTS</h4>
-                    <h2>for your diary</h2>
-                </div>
-
-                <div class="col">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <img src="../../public/images/avada-nightclub-events-6-400x225.jpg" alt="">
-                                <h3 class="red-txt">titolo</h3>
-                                <span>data</span>
-                            </div>
-
-                            <div class="col">
-                                <img src="../../public/images/avada-nightclub-events-5-400x225.jpg" alt="">
-                                <h3>titolo</h3>
-                                <span>data</span>
-                            </div>
-
-                            <div class="col">
-                                <img src="../../public/images/avada-nightclub-events-4-400x225.jpg" alt="">
-                                <h3>titolo</h3>
-                                <span>data</span>
-                            </div>
-
-                            <div class="col">
-                                <img src="../../public/images/avada-nightclub-events-3-400x225.jpg" alt="">
-                                <h3>titolo</h3>
-                                <span>data</span>
-                            </div>
-
-                            <div class="col">
-                                <img src="../../public/images/avada-nightclub-events-2-400x225.jpg" alt="">
-                                <h3>titolo</h3>
-                                <span>data</span>
-                            </div>
-
-                            <div class="col">
-                                <img src="../../public/images/avada-nightclub-events-1-400x225.jpg" alt="">
-                                <h3>titolo</h3>
-                                <span>data</span>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <button class="red-button">rsvp now</button>
-                        </div>
+            <div class="overlay">
+                <div class="row text-center row-cols-1">
+                    <div class="col">
+                        <h4 class="red-txt">SPECIAL EVENTS</h4>
+                        <h2>for your diary</h2>
                     </div>
 
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="../../public/images/avada-nightclub-events-6-400x225.jpg" alt="">
+                                    <h3 class="red-txt">titolo</h3>
+                                    <span>data</span>
+                                </div>
+
+                                <div class="col">
+                                    <img src="../../public/images/avada-nightclub-events-5-400x225.jpg" alt="">
+                                    <h3>titolo</h3>
+                                    <span>data</span>
+                                </div>
+
+                                <div class="col">
+                                    <img src="../../public/images/avada-nightclub-events-4-400x225.jpg" alt="">
+                                    <h3>titolo</h3>
+                                    <span>data</span>
+                                </div>
+
+                                <div class="col">
+                                    <img src="../../public/images/avada-nightclub-events-3-400x225.jpg" alt="">
+                                    <h3>titolo</h3>
+                                    <span>data</span>
+                                </div>
+
+                                <div class="col">
+                                    <img src="../../public/images/avada-nightclub-events-2-400x225.jpg" alt="">
+                                    <h3>titolo</h3>
+                                    <span>data</span>
+                                </div>
+
+                                <div class="col">
+                                    <img src="../../public/images/avada-nightclub-events-1-400x225.jpg" alt="">
+                                    <h3>titolo</h3>
+                                    <span>data</span>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <button class="red">rsvp now</button>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+
+
 
         </section>
 
@@ -165,7 +169,7 @@ export default {
                     <h2>esclusive vip lounge</h2>
                 </div>
                 <div class="col-lg-2">
-                    <button class="red-button">
+                    <button class="red">
                         join the club
                     </button>
                 </div>
@@ -180,21 +184,15 @@ export default {
 <style lang="scss" scoped>
 @use '../style/partials/variables.scss' as *;
 @use '../style/partials/mixin.scss' as *;
+@use '../style/general.scss' as *;
+
+
 
 .theClub {
     background-image: url(../../public/images/avada-nightclub-cloud-background.jpg);
     background-size: cover;
     padding: 100px 0;
     color: gray;
-
-
-
-    h4 {
-        color: $primary-color;
-
-    }
-
-
 
     .row>* {
         padding-right: calc(var(--bs-gutter-x) * 0);
@@ -206,7 +204,6 @@ export default {
     position: relative;
     color: white;
 
-
     img {
         width: 600px;
         height: 338px;
@@ -216,7 +213,7 @@ export default {
         display: flex;
         align-items: center;
         position: absolute;
-        right: 5%;
+        right: 0;
         bottom: 10%;
 
         span {
@@ -244,9 +241,7 @@ export default {
 
 }
 
-h2 {
-    @include subtitle;
-}
+
 
 .dj-set {
     .row>* {
@@ -269,24 +264,6 @@ h2 {
 
 }
 
-.blu-button {
-    @include blue-button;
-
-}
-
-.red-button {
-    @include red-button;
-
-}
-
-.blu-txt {
-    color: $primary-color;
-}
-
-.red-txt {
-    color: $secondary-color;
-}
-
 .special-events {
     padding: 150px 0;
     background-image: url(../../public/images/avada-nightclub-homepage-events-background-new.jpg);
@@ -294,11 +271,8 @@ h2 {
     color: white;
     position: relative;
 
-    .overlay {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-}
 
+}
 
 .vip {
     background-image: url(../../public/images/avada-nightclub-vip-hero-new.jpg);
