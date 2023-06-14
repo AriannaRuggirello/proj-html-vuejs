@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-    <div class="col">
+    <div class="col space">
         <img :src="details.img" alt="">
         <h3 class="red-txt">{{ details.text }}</h3>
         <span>{{ details.date }}</span>

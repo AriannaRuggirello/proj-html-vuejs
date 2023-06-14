@@ -67,22 +67,25 @@ export default {
 
 <template>
   <header>
+    <!-- overlay scuro sull'immagine -->
     <div class="overlay">
       <div class="container text-center">
-
+        <!-- menu di navigazione -->
         <nav>
-
+          <!-- voci di menu sx -->
           <LinkLeftHeader v-for="link in linksLeft" :href="link.url" :details="link"
             :class="link.active ? 'active' : ''" />
 
+          <!-- logo img -->
           <a href="#">
             <img src="../../public/images/avada-nightclub-logo.png" alt="">
           </a>
 
-
+          <!-- voci di menu dx -->
           <LinkRightHeader v-for="link in linksRight" :href="link.url" :details="link"
             :class="link.active ? 'active' : ''" />
         </nav>
+
         <!-- hero -->
         <section class="hero">
           <!-- row con icone alla fine -->
@@ -95,7 +98,6 @@ export default {
 
             </div>
           </div>
-
           <div class="row justify-content-end ">
             <div class="icon">
               <h3><sup>$</sup>39</h3>
@@ -103,7 +105,8 @@ export default {
             </div>
 
           </div>
-          <!-- immagine,testo e pulsante -->
+
+          <!-- immagine,testo e pulsante centrali-->
           <div class="row row-cols-1">
             <div class="col">
               <img src="../../public/images/avada-nightclub-homepage-image-800x398.png" alt="">
@@ -117,8 +120,6 @@ export default {
             </div>
           </div>
         </section>
-
-
       </div>
     </div>
   </header>

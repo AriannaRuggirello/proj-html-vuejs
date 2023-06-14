@@ -72,15 +72,13 @@ export default {
                 </div>
                 <!-- immagini -->
                 <div class="row text-center ">
-                    <!-- img cards -->
+                    <!-- 4img cards -->
                     <div class="col text-end info">
-
                         <img src="../../public/images/avada-nightclub-dancelounge-small.jpg" alt="">
                         <div class="info-img">
                             <span>dance lounge</span>
                             <hr>
                         </div>
-
                     </div>
 
                     <div class="col text-start info">
@@ -122,14 +120,9 @@ export default {
 
             <div class="row">
                 <div class="col-lg-6 info">
-
-                    <div class="overlay">
-                        <img src="../../public/images/avada-nightclub-resident-profile.jpg" alt="">
-
-                    </div>
-
-
-
+                    <!-- img -->
+                    <img src="../../public/images/avada-nightclub-resident-profile.jpg" alt="">
+                    <!-- scritta sopra img -->
                     <div class="info-button">
                         <h4 class="red-txt">RESIDENT DJ</h4>
                         <h2>Dj Avada</h2>
@@ -137,7 +130,9 @@ export default {
                     </div>
                 </div>
                 <div class="col-lg-6 info">
+                    <!-- img -->
                     <img src="../../public/images/avada-nightclub-lisahouse-inset-new.jpg" alt="">
+                    <!-- scritta sopra img -->
                     <div class="info-button">
                         <h4 class="blu-txt">SPECIAL GUEST DJ </h4>
                         <h2>Dj Blondie</h2>
@@ -154,18 +149,18 @@ export default {
 
             <div class="overlay">
                 <div class="row text-center row-cols-1">
+                    <!-- scritte centrali -->
                     <div class="col">
                         <h4 class="red-txt">SPECIAL EVENTS</h4>
                         <h2>for your diary</h2>
                     </div>
-
+                    <!--6 img e info -->
                     <div class="col">
                         <div class="container">
                             <div class="row">
-
                                 <MainSpecialEvents v-for="specialEvent in specialEvents" :details="specialEvent" />
                             </div>
-
+                            <!-- button -->
                             <div class="col">
                                 <button class="red">rsvp now</button>
                             </div>
@@ -174,9 +169,6 @@ export default {
                     </div>
                 </div>
             </div>
-
-
-
         </section>
 
         <!-- vip section -->
@@ -184,10 +176,12 @@ export default {
 
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-5">
+                    <!-- info sx -->
                     <h4 class="blu-txt">SPECIAL GUEST DJ </h4>
                     <h2>esclusive vip lounge</h2>
                 </div>
                 <div class="col-lg-2">
+                    <!-- button dx -->
                     <button class="red">
                         join the club
                     </button>
@@ -259,8 +253,6 @@ export default {
 
 
 }
-
-
 
 .dj-set {
     .row>* {

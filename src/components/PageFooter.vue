@@ -83,8 +83,8 @@ export default {
                 <div class="col">
                     <div class="row row-cols-1 text-center">
                         <div class="col space">
+                            <!-- logo -->
                             <img src="../../public/images/avada-nightclub-logo-2x-200x66.png" alt="">
-
                         </div>
 
                         <div class="col">
@@ -130,6 +130,7 @@ export default {
 <style lang="scss" scoped>
 @use '../style/partials/variables.scss' as *;
 @use '../style/partials/mixin.scss' as *;
+@use '../style/general.scss' as *;
 
 footer {
     background-image: url(../../public/images/avada-nightclub-footer-background-final-2.jpg);
@@ -138,10 +139,6 @@ footer {
     background-repeat: no-repeat;
     padding: 80px 0;
 
-
-    .space {
-        padding-bottom: 30px;
-    }
 
     .active {
         color: $primary-color;
