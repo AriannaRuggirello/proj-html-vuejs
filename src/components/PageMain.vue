@@ -121,7 +121,7 @@ export default {
             <div class="row">
                 <div class="col-lg-6 info">
                     <!-- img -->
-                    <img src="../../public/images/avada-nightclub-resident-profile.jpg" alt="">
+                    <img class="left-img" src="../../public/images/avada-nightclub-resident-profile.jpg" alt="">
                     <!-- scritta sopra img -->
                     <div class="info-button">
                         <h4 class="red-txt">RESIDENT DJ</h4>
@@ -131,7 +131,7 @@ export default {
                 </div>
                 <div class="col-lg-6 info">
                     <!-- img -->
-                    <img src="../../public/images/avada-nightclub-lisahouse-inset-new.jpg" alt="">
+                    <img class="right-img" src="../../public/images/avada-nightclub-lisahouse-inset-new.jpg" alt="">
                     <!-- scritta sopra img -->
                     <div class="info-button">
                         <h4 class="blu-txt">SPECIAL GUEST DJ </h4>
@@ -265,6 +265,15 @@ export default {
         height: 500px;
         object-fit: cover;
         position: relative;
+    }
+
+    .left-img {
+        border-top: 3px solid $secondary-color;
+    }
+
+    .right-img {
+        border-top: 3px solid $primary-color;
+
     }
 
     .info-button {
