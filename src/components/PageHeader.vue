@@ -151,6 +151,7 @@ header {
       font-weight: bold;
       padding-right: 40px;
       text-decoration: none;
+
     }
 
     .active {
@@ -172,6 +173,10 @@ header {
       margin: 30px 0
     }
 
+    button:hover {
+      background-color: #f51265;
+    }
+
     .icon {
       width: 70px;
       height: 70px;
@@ -180,20 +185,27 @@ header {
       border-radius: 5px;
       padding: 10px;
       margin-bottom: 10px;
+      position: relative;
 
 
       .fa-folder {
         font-size: 30px;
+        position: absolute;
+        left: 30%;
+        top: 15%;
       }
 
       h3 {
         color: #65bc7b;
         font-size: 30px;
+        font-weight: bold;
       }
 
       h4 {
         font-weight: bold;
         font-size: small;
+        position: absolute;
+        top: 60%;
       }
     }
 

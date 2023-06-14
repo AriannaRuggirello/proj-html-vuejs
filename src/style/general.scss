@@ -11,11 +11,6 @@ button {
     margin: 20px 0;
 }
 
-h2 {
-    color: white;
-    font-size: 60px;
-}
-
 .blue {
     background-color: $primary-color;
 }
@@ -24,6 +19,22 @@ h2 {
     background-color: $secondary-color;
 
 }
+
+.blue:hover {
+    background-color: #1b9cf8;
+}
+
+.red:hover {
+    background-color: #f51265;
+
+}
+
+h2 {
+    color: white;
+    font-size: 60px;
+}
+
+
 
 .blu-txt {
     color: $primary-color;

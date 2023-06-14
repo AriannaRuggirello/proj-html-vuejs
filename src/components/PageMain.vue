@@ -61,7 +61,7 @@ export default {
                 <!-- testo -->
                 <div class="row text-center justify-content-center">
                     <div class="col-lg-7">
-                        <h4 class="red-txt">WELCOME TO AVADA</h4>
+                        <h4 class="blu-txt">WELCOME TO AVADA</h4>
                         <h2>have the night of your life</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores cumque! Officia vero
                             quae explicabo fugiat earum, expedita quidem optio quasi voluptate veniam cupiditate nulla
@@ -272,6 +272,8 @@ export default {
         top: 10%;
         left: 10%;
     }
+
+    .blue:hover {}
 
 }
 
