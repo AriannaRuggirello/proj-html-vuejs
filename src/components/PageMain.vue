@@ -1,9 +1,54 @@
 <script >
+import MainSpecialEvents from '../components/MainSpecialEvents.vue'
 
 
 export default {
     name: 'PageMain',
+    components: {
+        MainSpecialEvents,
+    },
+    data() {
+        return {
+            specialEvents: [
+                {
+                    img: '../../public/images/avada-nightclub-events-6-400x225.jpg',
+                    text: 'DJ Fusion',
+                    date: 'August 19,2022 @ 8.00 am',
+                },
 
+                {
+                    img: '../../public/images/avada-nightclub-events-5-400x225.jpg',
+                    text: 'House Nation',
+                    date: 'August 19,2022 @ 8.00 am',
+                },
+
+                {
+                    img: '../../public/images/avada-nightclub-events-4-400x225.jpg',
+                    text: 'Jazz Night',
+                    date: 'August 19,2022 @ 8.00 am',
+                },
+
+                {
+                    img: '../../public/images/avada-nightclub-events-3-400x225.jpg',
+                    text: 'VIP Taster Session',
+                    date: 'August 19,2022 @ 8.00 am',
+                },
+
+                {
+                    img: '../../public/images/avada-nightclub-events-2-400x225.jpg',
+                    text: 'Funky House Rave',
+                    date: 'August 19,2022 @ 8.00 am',
+                },
+
+                {
+                    img: '../../public/images/avada-nightclub-events-1-400x225.jpg',
+                    text: 'Urban Vibes',
+                    date: 'August 19,2022 @ 8.00 am',
+                },
+
+            ]
+        }
+    }
 }
 </script>
 
@@ -77,7 +122,14 @@ export default {
 
             <div class="row">
                 <div class="col-lg-6 info">
-                    <img src="../../public/images/avada-nightclub-resident-profile.jpg" alt="">
+
+                    <div class="overlay">
+                        <img src="../../public/images/avada-nightclub-resident-profile.jpg" alt="">
+
+                    </div>
+
+
+
                     <div class="info-button">
                         <h4 class="red-txt">RESIDENT DJ</h4>
                         <h2>Dj Avada</h2>
@@ -110,41 +162,8 @@ export default {
                     <div class="col">
                         <div class="container">
                             <div class="row">
-                                <div class="col">
-                                    <img src="../../public/images/avada-nightclub-events-6-400x225.jpg" alt="">
-                                    <h3 class="red-txt">titolo</h3>
-                                    <span>data</span>
-                                </div>
 
-                                <div class="col">
-                                    <img src="../../public/images/avada-nightclub-events-5-400x225.jpg" alt="">
-                                    <h3>titolo</h3>
-                                    <span>data</span>
-                                </div>
-
-                                <div class="col">
-                                    <img src="../../public/images/avada-nightclub-events-4-400x225.jpg" alt="">
-                                    <h3>titolo</h3>
-                                    <span>data</span>
-                                </div>
-
-                                <div class="col">
-                                    <img src="../../public/images/avada-nightclub-events-3-400x225.jpg" alt="">
-                                    <h3>titolo</h3>
-                                    <span>data</span>
-                                </div>
-
-                                <div class="col">
-                                    <img src="../../public/images/avada-nightclub-events-2-400x225.jpg" alt="">
-                                    <h3>titolo</h3>
-                                    <span>data</span>
-                                </div>
-
-                                <div class="col">
-                                    <img src="../../public/images/avada-nightclub-events-1-400x225.jpg" alt="">
-                                    <h3>titolo</h3>
-                                    <span>data</span>
-                                </div>
+                                <MainSpecialEvents v-for="specialEvent in specialEvents" :details="specialEvent" />
                             </div>
 
                             <div class="col">
@@ -253,7 +272,7 @@ export default {
         width: 100%;
         height: 500px;
         object-fit: cover;
-        padding: 0 -20px;
+        position: relative;
     }
 
     .info-button {
