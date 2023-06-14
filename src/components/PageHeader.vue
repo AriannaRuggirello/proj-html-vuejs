@@ -109,11 +109,12 @@ export default {
           <!-- immagine,testo e pulsante centrali-->
           <div class="row row-cols-1">
             <div class="col">
-              <img src="../../public/images/avada-nightclub-homepage-image-800x398.png" alt="">
+              <img class="hero-img" src="../../public/images/avada-nightclub-homepage-image-800x398.png" alt="">
               <h2> making memories all night long </h2>
               <button>BECOME A VIP</button>
               <!-- play showreel img -->
               <div class="col">
+
                 <img src="../../public/images/avada-nightclub-play-showreel-200x47.png" alt="">
 
               </div>
@@ -142,8 +143,6 @@ header {
 
     img {
       width: 200px;
-
-
     }
 
     a {
@@ -163,7 +162,7 @@ header {
   .hero {
     padding-bottom: 50px;
 
-    img {
+    .hero-img {
       border-bottom: 3px solid $primary-color;
       margin-bottom: 20px;
     }

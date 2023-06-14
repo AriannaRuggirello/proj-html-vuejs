@@ -148,20 +148,20 @@ export default {
         <section class="special-events">
 
             <div class="overlay">
-                <div class="row text-center row-cols-1">
+                <div class="row row-cols-1">
                     <!-- scritte centrali -->
-                    <div class="col">
+                    <div class="col text-center">
                         <h4 class="red-txt">SPECIAL EVENTS</h4>
                         <h2>for your diary</h2>
                     </div>
                     <!--6 img e info -->
-                    <div class="col">
+                    <div class="col ">
                         <div class="container">
                             <div class="row">
                                 <MainSpecialEvents v-for="specialEvent in specialEvents" :details="specialEvent" />
                             </div>
                             <!-- button -->
-                            <div class="col">
+                            <div class="col text-center">
                                 <button class="red">rsvp now</button>
                             </div>
                         </div>
@@ -273,7 +273,7 @@ export default {
         left: 10%;
     }
 
-    .blue:hover {}
+
 
 }
 
@@ -281,6 +281,7 @@ export default {
     padding: 150px 0;
     background-image: url(../../public/images/avada-nightclub-homepage-events-background-new.jpg);
     background-size: cover;
+    background-position: center;
     color: white;
     position: relative;
 
