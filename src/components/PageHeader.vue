@@ -77,9 +77,9 @@ export default {
             :class="link.active ? 'active' : ''" />
 
           <!-- logo img -->
-          <a href="#">
-            <img src="../../public/images/avada-nightclub-logo.png" alt="">
-          </a>
+
+          <img src="../../public/images/avada-nightclub-logo.png" alt="">
+
 
           <!-- voci di menu dx -->
           <LinkRightHeader v-for="link in linksRight" :href="link.url" :details="link"
@@ -146,17 +146,23 @@ header {
     }
 
     a {
+      width: 50%;
+      margin: 0 50px;
       color: white;
       font-weight: bold;
-      padding-right: 40px;
+      // padding: 0 40px 0 40px;
       text-decoration: none;
 
+
+      &.active,
+      &:hover {
+
+        color: $secondary-color;
+        border-bottom: 2px solid $secondary-color;
+      }
     }
 
-    .active {
-      color: $secondary-color;
-      border-bottom: 2px solid $secondary-color;
-    }
+
   }
 
   .hero {
