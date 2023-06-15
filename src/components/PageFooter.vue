@@ -69,7 +69,7 @@ export default {
     <footer>
         <div class="container">
             <!-- tre colonne -->
-            <div class="row text-center">
+            <div class="row text-center justify-content-between">
                 <!-- colonna eventi -->
                 <div class="col">
                     <h4>EVENTS</h4>
@@ -81,7 +81,7 @@ export default {
 
                 <!-- colonna link -->
                 <div class="col">
-                    <div class="row row-cols-1 text-center">
+                    <div class="row row-cols-1">
                         <div class="col space">
                             <!-- logo -->
                             <img src="../../public/images/avada-nightclub-logo-2x-200x66.png" alt="">
@@ -139,10 +139,17 @@ footer {
     background-repeat: no-repeat;
     padding: 80px 0;
 
+    li {
 
-    .active {
-        color: $primary-color;
+        &.active,
+        &:hover {
+
+            color: $primary-color;
+
+        }
     }
+
+
 
     .copy {
         padding-top: 150px;

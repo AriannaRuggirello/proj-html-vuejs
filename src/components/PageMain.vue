@@ -150,7 +150,7 @@ export default {
             <div class="overlay">
                 <div class="row row-cols-1">
                     <!-- scritte centrali -->
-                    <div class="col text-center">
+                    <div class="col text-center space">
                         <h4 class="red-txt">SPECIAL EVENTS</h4>
                         <h2>for your diary</h2>
                     </div>
